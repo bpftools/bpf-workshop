@@ -1,0 +1,18 @@
+For compatibility with the Linux Kernel licensing rules,
+all the C code (in files with extension *.c and *.h) in this repostiroy
+is licensed under GPL-2.0+ (GNU General Public License v2.0 or later).
+
+    GPL-2.0:                https://www.gnu.org/licenses/old-licenses/gpl-2.0.html
+    Kernel licensing rules: https://www.kernel.org/doc/html/latest/process/license-rules.html
+
+The rest of the code in this repository is licensed under the Apache License
+Version 2.0. You may obtain a copy of this license at:
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+The instructions and slides in this repository (e.g. the files
+with extension .md and .yml in the "slides" subdirectory) are
+under the Creative Commons Attribution 4.0 International Public
+License. You may obtain a copy of this license at:
+
+    https://creativecommons.org/licenses/by/4.0/legalcode

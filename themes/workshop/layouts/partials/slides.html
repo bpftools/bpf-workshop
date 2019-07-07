@@ -1,0 +1,7 @@
+<textarea id="source">
+{{ range .Data.Pages.ByWeight }}
+class: {{ .Params.class }}
+{{ .Content}}
+---
+{{ end }}
+</textarea>
