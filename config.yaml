@@ -1,0 +1,28 @@
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "BPF Workshop"
+theme: "workshop"
+publishDir: "docs"
+
+menu:
+ main:
+   - identifier: introduction
+     weight: 100
+   - identifier: program-types
+     weight: 200
+   - identifier: bpf-vm 
+     weight: 300
+   - identifier: bcc 
+     weight: 400
+   - identifier: bpftrace
+     weight: 500
+   - identifier: gobpf 
+     weight: 600
+   - identifier: kubernetes
+     weight: 700
+   - identifier: clang
+     weight: 800
+   - identifier: tools
+     weight: 900
+   - identifier: networking
+     weight: 1000

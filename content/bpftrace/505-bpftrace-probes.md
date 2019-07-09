@@ -1,7 +1,7 @@
 
 ---
 title:  "bpftrace-probes"
-weight: 501
+weight: 505
 ---
 
 # bpftrace: Probes

@@ -1,7 +1,7 @@
 
 ---
 title:  "bpftrace"
-weight: 500
+weight: 501
 ---
 
 # bpftrace: BPF observability front-end
@@ -12,4 +12,5 @@ On GitHub https://github.com/iovisor/bpftrace
 - Used in production at Netflix, Facebook, etc
 - Custom one-liners
 - Tools
+
 

@@ -1,0 +1,38 @@
+{{ .Page.Title }}
+
+{{ if not .Page.Params.sectionIdentifier }}
+.red[error rendering the nav menu], add
+
+```
+sectionIdentifier: "your-id"
+```
+To the page.
+It should match what you did put in the menu in the config file!
+
+{{ end }}
+
+
+{{ $currentPage := .Page.Params.sectionIdentifier }}
+{{ $previous := "" }}
+{{ $next := "" }}
+
+{{ $previousIteration := "" }}
+{{ $stop := false }}
+{{ range .Site.Menus.main.ByWeight }}
+ {{ if eq $currentPage .Identifier }}
+   {{ $previous = $previousIteration }}
+ {{ end }}
+
+ {{ if eq $previousIteration $currentPage }}
+   {{ $next = .Identifier }}
+ {{ end }}
+
+ {{ $previousIteration = .Identifier }}
+{{ end }}
+
+.nav[ [Previous section](#{{$previous}})
+|
+[Back to table of contents](#toc)
+|
+[Next section](#{{$next}})
+]

@@ -1,6 +1,6 @@
 ---
 title:  "probe type shortcuts"
-weight: 502
+weight: 510
 ---
 
 # bpftrace: Probe type shortcuts

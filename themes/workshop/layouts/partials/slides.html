@@ -1,7 +1,8 @@
 <textarea id="source">
 {{ range .Data.Pages.ByWeight }}
+name: {{ .Params.title }}
 class: {{ .Params.class }}
-{{ .Content}}
+{{ .Content }}
 ---
 {{ end }}
 </textarea>
