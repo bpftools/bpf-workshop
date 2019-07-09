@@ -1,6 +1,5 @@
-
 ---
-title:  "bpftrace"
+title:  "bpftrace-intro"
 weight: 501
 ---
 

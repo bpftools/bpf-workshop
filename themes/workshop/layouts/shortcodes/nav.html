@@ -1,10 +1,13 @@
-{{ .Page.Title }}
-
-{{ if not .Page.Params.sectionIdentifier }}
+{{ if .Page.Params.navTitle }}
+{{ .Page.Params.navTitle }}
+{{ else }}
+.red[No title provided, use `navTitle` in your page]
+{{ end }}
+{{ if not .Page.Title }}
 .red[error rendering the nav menu], add
 
 ```
-sectionIdentifier: "your-id"
+title: "your-id"
 ```
 To the page.
 It should match what you did put in the menu in the config file!
@@ -12,7 +15,7 @@ It should match what you did put in the menu in the config file!
 {{ end }}
 
 
-{{ $currentPage := .Page.Params.sectionIdentifier }}
+{{ $currentPage := .Page.Title }}
 {{ $previous := "" }}
 {{ $next := "" }}
 

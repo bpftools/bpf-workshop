@@ -1,4 +1,3 @@
-
 ---
 title:  "bpftrace-syntax"
 weight: 503

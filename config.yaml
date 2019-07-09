@@ -26,3 +26,5 @@ menu:
      weight: 900
    - identifier: networking
      weight: 1000
+   - identifier: security
+     weight: 1100
