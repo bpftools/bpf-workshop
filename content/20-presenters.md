@@ -1,6 +1,6 @@
 ---
 title:  "presenters"
-weight: 11
+weight: 20
 class: extra-details
 ---
 

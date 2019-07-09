@@ -1,6 +1,6 @@
 ---
 title:  "exercise example"
-weight: 30
+weight: 999
 class: extra-details
 ---
 
