@@ -6,7 +6,7 @@ class: extra-details
 
 # Pre-requirements
 
-- A machine with Linux Kernel 4.14+ (or the provided Vagrant machine)
+- A machine with Linux Kernel 4.18+ (or the provided Vagrant machine)
 
 - Be comfortable with the UNIX command line
 
