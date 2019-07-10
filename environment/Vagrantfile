@@ -1,0 +1,34 @@
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+VAGRANTFILE_API_VERSION = "2"
+
+$bootstrap=<<SCRIPT
+echo "deb [trusted=yes] https://repo.iovisor.org/apt/xenial xenial-nightly main" | sudo tee /etc/apt/sources.list.d/iovisor.list
+sudo apt-get update -y
+sudo apt-get install bcc-tools libbcc-examples linux-headers-$(uname -r) -y
+sudo snap install --devmode bpftrace
+sudo snap connect bpftrace:system-trace
+sudo apt-get install wget git build-essential clang gcc -y
+SCRIPT
+
+Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
+  num_machines = 1
+  base_ip = "192.168.33."
+  ips = num_machines.times.collect { |n| base_ip + "#{n+11}" }
+
+  # setup nodes
+  num_machines.times do |n|
+    config.vm.define "xdptutorial-#{n+1}" do |net|
+      net.vm.box = "ubuntu/bionic64"
+      net_ip = ips[n]
+      net_index = n+1
+      net.vm.hostname = "bcc-#{net_index}"
+      net.vm.provider "virtualbox" do |vb|
+        vb.customize ["modifyvm", :id, "--memory", "1024"]
+      end
+      net.vm.network :private_network, ip: "#{net_ip}"
+      net.vm.provision :shell, inline: $bootstrap, :args => "#{net_ip}"
+    end
+  end
+end
