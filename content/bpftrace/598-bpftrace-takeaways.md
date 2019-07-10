@@ -1,6 +1,6 @@
 
 ---
-title:  "bpftrace-credits"
+title:  "bpftrace-takeaways"
 weight: 599
 ---
 
