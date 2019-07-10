@@ -1,9 +1,13 @@
 # BPF Workshop
 
+Let's share some eBPF love!
+
 ## Authors
 
 - [David Calavera](https://github.com/calavera)
 - [Lorenzo Fontana](https://github.com/fntlnz)
+
+*Add your name here if you contributed to this workshop*
 
 ## Build and run
 
