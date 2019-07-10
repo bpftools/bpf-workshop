@@ -1,4 +1,3 @@
-
 ---
 title:  "bpftrace-credits"
 weight: 599

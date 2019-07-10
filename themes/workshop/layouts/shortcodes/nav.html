@@ -1,8 +1,3 @@
-{{ if .Page.Params.navTitle }}
-{{ .Page.Params.navTitle }}
-{{ else }}
-.red[No title provided, use `navTitle` in your page]
-{{ end }}
 {{ if not .Page.Title }}
 .red[error rendering the nav menu], add
 
@@ -10,12 +5,22 @@
 title: "your-id"
 ```
 To the page.
-It should match what you did put in the menu in the config file!
+It should match what the identifier you did put in the menu in the config file!
 
 {{ end }}
 
-
 {{ $currentPage := .Page.Title }}
+
+{{ $navTitle := "Title not provided" }}
+{{ range .Site.Menus.main.ByWeight }}
+  {{ if eq .Identifier $currentPage}}
+    {{ if .Title  }}
+      {{ $navTitle = .Title }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+
+{{ $navTitle }}
 {{ $previous := "" }}
 {{ $next := "" }}
 

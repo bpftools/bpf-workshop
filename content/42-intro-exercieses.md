@@ -1,6 +1,6 @@
 ---
 title:  "intro-exercises"
-weight: 32
+weight: 42
 ---
 
 ## Hands-on sections

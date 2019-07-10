@@ -1,7 +1,6 @@
-
 ---
-title:  "bpftrace-credits"
-weight: 599
+title:  "bpftrace-takeaways"
+weight: 598
 ---
 
 # Takeaways
