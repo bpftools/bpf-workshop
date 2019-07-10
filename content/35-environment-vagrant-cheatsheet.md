@@ -8,7 +8,7 @@ weight: 35
 After cloning the workshop repository, enter the environment folder:
 
 ```
-git clone https://github.com/fntlnz/bpf-workshop.git
+git clone https://github.com/bpftools/bpf-workshop.git
 cd bpf-workshop/environment
 ```
 
