@@ -93,6 +93,10 @@ span.footnote {
   bottom: 2em;
 }
 
+.footnote .smaller {
+  font-size: 0.7em;
+}
+
 .red { color: #fa0000; }
 .gray { color: #ccc; }
 .small { font-size: 70%; }
