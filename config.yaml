@@ -1,4 +1,4 @@
-baseURL: "http://example.org/"
+baseURL: "https://workshop.bpf.sh/"
 languageCode: "en-us"
 title: "BPF Workshop"
 theme: "workshop"
@@ -8,23 +8,34 @@ menu:
  main:
    - identifier: introduction
      weight: 100
+     title: "Introduction"
    - identifier: program-types
      weight: 200
+     title: "eBPF Program types"
    - identifier: bpf-vm 
      weight: 300
+     title: "The BPF in Kernel Virtual Machine"
    - identifier: bcc 
      weight: 400
+     title: "BCC"
    - identifier: bpftrace
      weight: 500
+     title: "bpftrace"
    - identifier: gobpf 
      weight: 600
+     title: "gobpf"
    - identifier: kubernetes
      weight: 700
+     title: "eBPF and Kubernetes"
    - identifier: clang
      weight: 800
+     title: "Clang BPF backend"
    - identifier: tools
      weight: 900
+     title: "Any other tools?"
    - identifier: networking
      weight: 1000
+     title: "eBPF and Linux Networking"
    - identifier: security
      weight: 1100
+     title: "Linux Kernel security and eBPF"

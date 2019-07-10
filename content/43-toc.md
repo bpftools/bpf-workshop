@@ -3,6 +3,6 @@ title:  "toc"
 weight: 43
 ---
 
-## TOC
+# Table of content
 
-TODO
+{{< toc >}}
