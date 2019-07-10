@@ -1,7 +1,7 @@
 
 ---
 title:  "bpftrace-internals"
-weight: 530
+weight: 590
 ---
 
 # bpftrace: Internals

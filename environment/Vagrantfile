@@ -19,11 +19,11 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
 
   # setup nodes
   num_machines.times do |n|
-    config.vm.define "xdptutorial-#{n+1}" do |net|
+    config.vm.define "bpftutorial-#{n+1}" do |net|
       net.vm.box = "ubuntu/bionic64"
       net_ip = ips[n]
       net_index = n+1
-      net.vm.hostname = "bcc-#{net_index}"
+      net.vm.hostname = "bpftutorial-#{net_index}"
       net.vm.provider "virtualbox" do |vb|
         vb.customize ["modifyvm", :id, "--memory", "1024"]
       end

@@ -10,3 +10,4 @@ weight: 599
 - [IOVisor's bpftrace reference guide](https://github.com/iovisor/bpftrace/blob/master/docs/reference_guide.md)
 - [IOVisor's bpftrace repository](https://github.com/iovisor/bpftrace)
 - [Wikipedia article on TCP](https://en.wikipedia.org/wiki/Transmission_Control_Protocol)
+- [IOVisor's bpftrace one liner's tutorial](https://github.com/iovisor/bpftrace/blob/b6c4136fabf2527fc736bc08ee875625156b5431/docs/tutorial_one_liners.md)
