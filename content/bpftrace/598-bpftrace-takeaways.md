@@ -1,7 +1,6 @@
-
 ---
 title:  "bpftrace-takeaways"
-weight: 599
+weight: 598
 ---
 
 # Takeaways

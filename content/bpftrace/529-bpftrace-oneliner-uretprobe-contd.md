@@ -1,7 +1,7 @@
 
 ---
 title:  "bpftrace-oneliners-uretprobe-contd"
-weight: 528
+weight: 529
 class: extra-details
 ---
 
@@ -21,6 +21,7 @@ bpftrace -e \
   'uretprobe:./randomnumbers:"main.giveMeNumber"
   { printf("%d\n", retval) }'
 ```
-Bonus point, try to do an `objdump -t randomnumbers | grep -i giveMe`, what do you notice?
 ]
+
+.footnote[.smaller[Bonus point! Try to do an `objdump -t randomnumbers | grep -i giveMe`, what do you notice?]]
 
