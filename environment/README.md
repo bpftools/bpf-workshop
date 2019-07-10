@@ -15,3 +15,4 @@
 - clang
 - bpftrace
 - bcc
+- go

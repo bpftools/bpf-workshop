@@ -9,6 +9,7 @@ sudo apt-get update -y
 sudo apt-get install bcc-tools libbcc-examples linux-headers-$(uname -r) -y
 sudo snap install --devmode bpftrace
 sudo snap connect bpftrace:system-trace
+sudo snap install go --classic
 sudo apt-get install wget git build-essential clang gcc -y
 SCRIPT
 
