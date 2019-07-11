@@ -9,9 +9,6 @@ menu:
    - identifier: introduction
      weight: 100
      title: "Introduction"
-   - identifier: program-types
-     weight: 200
-     title: "eBPF Program types"
    - identifier: bpf-vm 
      weight: 300
      title: "The BPF in Kernel Virtual Machine"
