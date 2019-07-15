@@ -7,7 +7,7 @@ weight: 406
 
 .exercise[
 ```
-bpf_source = """
+bpf_source += """
 int on_execve(struct pt_regs *ctx,
     const char __user *filename,
     const char __user *const __user *__argv,
