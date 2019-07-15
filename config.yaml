@@ -18,18 +18,9 @@ menu:
    - identifier: bpftrace
      weight: 500
      title: "bpftrace"
-   - identifier: gobpf 
-     weight: 600
-     title: "gobpf"
    - identifier: kubernetes
      weight: 700
      title: "eBPF and Kubernetes"
-   - identifier: clang
-     weight: 800
-     title: "Clang BPF backend"
-   - identifier: tools
-     weight: 900
-     title: "Any other tools?"
    - identifier: networking
      weight: 1000
      title: "eBPF and Linux Networking"
