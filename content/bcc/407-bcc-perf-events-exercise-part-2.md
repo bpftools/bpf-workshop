@@ -3,7 +3,7 @@ title:  "bcc-perf-events-exercise-1"
 weight: 406
 ---
 
-# BCC perf events exercise (part 1)
+# BCC perf events exercise (part 2)
 
 .exercise[
 ```
