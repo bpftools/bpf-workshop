@@ -1,6 +1,6 @@
 ---
 title:  "credits"
-weight: 999999
+weight: 9999
 class: extra-details
 ---
 
