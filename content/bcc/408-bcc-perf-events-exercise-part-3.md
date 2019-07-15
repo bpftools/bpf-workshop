@@ -1,6 +1,6 @@
 ---
 title:  "bcc-perf-events-exercise-3"
-weight: 407
+weight: 408
 ---
 
 # BCC perf events exercise (part 3)
