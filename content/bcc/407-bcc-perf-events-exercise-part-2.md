@@ -1,24 +1,24 @@
 ---
-title:  "bcc-perf-events-exercise-2"
-weight: 407
+title:  "bcc-perf-events-exercise-1"
+weight: 406
 ---
 
-# BCC perf events exercise (part 2)
+# BCC perf events exercise (part 1)
+
 .exercise[
 ```
-from bcc import BPF
-from bcc.utils import printb
+bpf_source = """
+int on_execve(struct pt_regs *ctx,
+    const char __user *filename,
+    const char __user *const __user *__argv,
+    const char __user *const __user *__envp)
+{
+  struct data_t data = {};
+  bpf_get_current_comm(&data.comm, sizeof(data.comm));
 
-def dump_data(cpu, data, size):
-    event = bpf["events"].event(data)
-    printb(b"%-16s" % event.comm)
-
-bpf = BPF(text = bpf_source)
-execve_function = bpf.get_syscall_fnname("execve")
-bpf.attach_kprobe(event = execve_function, fn_name = "on_execve")
-
-bpf["events"].open_perf_buffer(dump_data)
-while 1:
-    bpf.perf_buffer_poll()
+  events.perf_submit(ctx, &data, sizeof(data));
+  return 0;
+}
+"""
 ```
 ]
