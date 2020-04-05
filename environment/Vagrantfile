@@ -21,7 +21,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   # setup nodes
   num_machines.times do |n|
     config.vm.define "bpftutorial-#{n+1}" do |net|
-      net.vm.box = "ubuntu/disco64"
+      net.vm.box = "ubuntu/focal64"
       net_ip = ips[n]
       net_index = n+1
       net.vm.hostname = "bpftutorial-#{net_index}"
